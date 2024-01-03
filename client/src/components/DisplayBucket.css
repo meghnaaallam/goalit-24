@@ -1,0 +1,17 @@
+.deleteContainer {
+display:flex;
+flex-direction: row;
+align-items: flex-end;
+justify-content: space-around;
+margin-top: 5px;
+}
+.header {
+margin-top:1rem;
+padding:1em;
+}
+
+.container-1 {
+padding:1rem;
+}
+
+

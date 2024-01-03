@@ -1,0 +1,13 @@
+node_modules
+.idea/gradle.xml
+.idea/libraries
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+media
+
+# Python
+*.py[cod]
+*$py.class
