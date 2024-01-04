@@ -36,17 +36,17 @@ python manage.py runserver
 
 **For frontend**
 
--Make sure you have Node.js installed
+- Make sure you have Node.js installed
 
   ```cd client```
 
-  -Install all the project dependencies
+  - Install all the project dependencies
   ```js
   npm i
   ```
-  -Start the app ```npm start```
+  - Start the app ```npm start```
 
- -Check http://localhost:3000/
+ - Check http://localhost:3000/
 
 
 ![img.png](img.png)
