@@ -9,7 +9,6 @@ Features:
 - Mark as done
 
 
-Made with React, Redux, Django REST Framework
 
 (UI Changes coming soon, please don't judge)
 
