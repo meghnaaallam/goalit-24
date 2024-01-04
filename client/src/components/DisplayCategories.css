@@ -1,0 +1,22 @@
+.allcategory {
+padding:1em;
+}
+
+.main-div {
+display:flex;
+flex-direction:column;
+background:#fff;
+width:40%;
+margin:-220px 0px 0px 550px;
+padding:20px;
+}
+
+.header {
+padding:1em;
+}
+.catBtn {
+border-radius:5px;
+padding:0.5rem;
+margin-right:10px;
+margin-bottom:18px;
+}

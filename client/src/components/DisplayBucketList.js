@@ -11,17 +11,17 @@ import FormCheck from "react-bootstrap/FormCheck";
 
 
 const DisplayBucketList = () => {
-const [goal, setGoal] = useState();
 // get data from store
 const dispatch = useDispatch()
 const bucketList = useSelector(state => state.bucketLists)
 const {success, loading, goals} = bucketList;
 console.log(goals);
 
-//get data from api
+//get data from api on page reload
 useEffect(()=> {
  dispatch(getBucketList())
 },[dispatch])
+
 
 const FormCheckBox = ({ item, index }) => {
   const [checked, setChecked] = useState(false);
@@ -34,6 +34,8 @@ const FormCheckBox = ({ item, index }) => {
     </Form.Check>
   );
 };
+
+
 function handleDeleteBtn(goal) {
 console.log(goal.id)
 dispatch(deleteGoal(goal.id));

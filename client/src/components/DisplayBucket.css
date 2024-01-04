@@ -3,15 +3,24 @@ display:flex;
 flex-direction: row;
 align-items: flex-end;
 justify-content: space-around;
-margin-top: 5px;
+margin-left: 200%;
 }
-.header {
-margin-top:1rem;
-padding:1em;
+.deleteBtn{
+display:inline;
+margin-top:-20px;
 }
 
 .container-1 {
-padding:1rem;
+display:flex;
+flex-direction:column;
+background:#fff;
+width:40%;
+margin:-40px 0px 0px 550px;
+padding:20px;
 }
+
+
+
+
 
 

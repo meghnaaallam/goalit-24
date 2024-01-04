@@ -1,7 +1,12 @@
 import { ActionTypes } from "../constants/actionTypes"
 
 
-export const bucketListReducer = (state={ goals:[] },action) => {
+const initialState = {
+  goals: [],
+};
+
+
+export const bucketListReducer = (state=initialState,action) => {
        switch(action.type) {
          case ActionTypes.GET_GOALS:
          return { loading:true, success:false, goals:[] };
@@ -18,12 +23,12 @@ export const bucketListReducer = (state={ goals:[] },action) => {
 //to make use of the state to change some information on the frontend. we need to make
 //sure that the previous object is there and also the current object
 
-export const addGoalReducer = (state={ },action) => {
+export const addGoalReducer = (state={goals:[] },action) => {
        switch(action.type) {
          case ActionTypes.ADD_GOAL_REQUEST:
          return { loading:true, success:false };
          case ActionTypes.ADD_GOAL_SUCCESS:
-         return {loading:false, success:true, ...state, goal: action.payload};
+         return {loading:false, success:true, ...state, goal:action.payload};
          case ActionTypes.ADD_GOAL_FAIL:
          return {loading:false, success:false, error: action.payload};
          case ActionTypes.ADD_GOAL_RESET:

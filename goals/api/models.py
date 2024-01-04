@@ -6,7 +6,6 @@ from django.db import models
 class Goals(models.Model):
      id=models.AutoField(primary_key = True)
      name = models.CharField(max_length=150, null=False,blank=False)
-     description = models.TextField()
      category = models.CharField(max_length=50, choices=((('Travel','Travel'),
      ('Adventure','Adventure'),('Fun','Fun'),('Creative','Creative'),
      ('Skills','Skills'),('Fitness','Fitness'),('Personal','Personal'),

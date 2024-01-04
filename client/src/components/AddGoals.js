@@ -11,13 +11,11 @@ const AddGoals = () => {
 const dispatch = useDispatch()
 
 const [name, setName] = useState("");
-const [description, setDescription] = useState("");
 const [category, setCategory] = useState("Travel");
 
 //clear data
 const clearData =() => {
 setName("");
-setDescription("");
 setCategory("");
 }
 
@@ -28,7 +26,6 @@ console.log(name)
 //form data
 let formData = new FormData()
 formData.append('name',name);
-formData.append('description', description);
 formData.append('category', category);
 
 console.log(formData);
@@ -42,10 +39,7 @@ dispatch(getBucketList());
  <div className='form-container'>
     <Forms className='form' onSubmit={handleSubmitBtn} encType="multipart/form-data">
        <Forms.Group className="mb-3">
-         <Forms.Control as="textarea" required rows={1} value={name} onChange={(e) => setName(e.target.value)} placeholder="What's something you've always wanted to do " />
-</Forms.Group>
-<Forms.Group className="mb-3">
-         <Forms.Control as="textarea" required rows={3}  placeholder="description" value={description} onChange={(e) => setDescription(e.target.value)} />
+         <Forms.Control as="textarea" required rows={2} value={name} onChange={(e) => setName(e.target.value)} placeholder="What's something you've always wanted to do " />
 </Forms.Group>
 <Forms.Group className="mb-3">
     <Forms.Select aria-label="Default select example" required value={category} onChange={(e) => setCategory(e.target.value)}>
