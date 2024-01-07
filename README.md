@@ -7,7 +7,7 @@
 Every year I come up with resolutions but sadly I don't keep track of them nor do I end up completing them. This year I realised to be mindful about how I approach my life in general. Hence, made a little something
 to track my goals for the year 2024!
 
-This project is intended to understand Django REST Framework and how to connect it with my React App. 
+This project is intended to understand Django REST Framework, Redux and how to connect it with my React App. 
 
 ### Features:
 - Add your goals
